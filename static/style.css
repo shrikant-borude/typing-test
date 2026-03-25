@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+    --bg: #111111;
+    --primary: #e2b714;
+    --text: #d1d0c5;
+    --subtext: #646669;
+    --box: #1b1b1b;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#paragraph {
+    color: var(--subtext);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+textarea {
+    width: 75%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: var(--box);
+    border: none;
+    color: var(--text);
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.results {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.results span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--subtext);
+    color: var(--subtext);
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}

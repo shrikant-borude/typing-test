@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Typing Speed Test</h1>
+
+    <div class="container">
+        <p id="paragraph">{{ paragraph }}</p>
+    </div>
+
+    <textarea id="input" placeholder="Start typing here..." cols="50"></textarea>
+
+    <div class="results">
+        <p>Time: <span id="time">0</span></p>
+        <p>WPM: <span id="wpm">0</span></p>
+        <p>Accuracy: <span id="accuracy">0</span></p>
+    </div>
+
+    <div>
+        <button id="reset">New Test</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
